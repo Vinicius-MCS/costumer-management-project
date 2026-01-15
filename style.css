@@ -1,5 +1,4 @@
 .logo {
-  display: flex;
   justify-content: center; 
   position: relative;
   top: -60px; 
@@ -8,4 +7,22 @@
 .logo img {
   height: 250px;  
   width: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.lista {
+  display: flex;
+  gap: 20px;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.linha {
+  display: flex;
+  flex-direction: column;
 }
