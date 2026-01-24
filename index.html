@@ -1,105 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Grupo7 - Cadastro de Cliente</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <header class="logo"> <img src="imagens/imaggrupo7.png" alt="Grupo7 cadastro"> </header>
-
-    <section class="faixa-titulo">
-        <h2>Cadastro</h2>
-    </section>
-    
-    <input type="radio" id="aba1" name="abas" checked hidden>
-    <input type="radio" id="aba2" name="abas" hidden>
-    <input type="radio" id="aba3" name="abas" hidden>
-        
-    <section id="container">
-        <section class="tabs">     
-            <label for="aba1" class="tab-btn">👤 Proprietário</label>
-            <label for="aba2" class="tab-btn">🏢 Empresa</label>
-            <label for="aba3" class="tab-btn">🔐 Login</label>
-        </section>
-    </section>
-
-    <main> 
-        <form>   
-            <section class="aba-conteudo aba1">
-                <div class="lista">
-                    <div class="campo"> 
-                        <label for="NOME" class="label-faixa">Nome completo do responsável</label>
-                        <input type="text" id="NOME" placeholder="Digite seu nome" required> </div>
-                    </div>
-
-                    <div class="lista">
-                        <div class="campo"> 
-                            <label for="CPF" class="label-faixa">CPF</label> 
-                            <input type="number" id="CPF" placeholder="000.000.000-00" required> 
-                        </div>
-                    </div>
-
-                    <div class="lista">
-                        <div class="campo"> 
-                            <label for="RG" class="label-faixa">RG</label> 
-                            <input type="number" id="RG"placeholder="00-000.000" required> 
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="aba-conteudo aba2">
-                <div class="lista">
-                    <div class="campo"> 
-                        <label for="EMPRESA" class="label-faixa">Nome da empresa</label>
-                        <input type="text" id="EMPRESA" name="empresa" placeholder="digite o nome" required> 
-                    </div>
-                </div>
-
-                <div class="campo"> 
-                    <label for="CNPJ" class="label-faixa">CNPJ</label> 
-                    <input type="number" id="CNPJ"placeholder="00.000.000/0001-00" required> 
-                </div>
-
-                <div class="campo"> 
-                    <label for="nomeFantasia" class="label-faixa">Nome fantasia</label> 
-                    <input type="text" id="nomeFantasia" placeholder="Digite aqui" required> 
-                </div>
-
-                <div class="linha"> 
-                    <label for="observacao" class="label-faixa">Observações</label> 
-                    <textarea id="observacao" placeholder="Informe aqui area de atuação"></textarea> 
-                </div>
-            </section>
-
-            <section class="aba-conteudo aba3">
-                <div class="lista">
-                    <div class="campo"> 
-                        <label for="email" class="label-faixa">E-mail</label>
-                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
-                    </div>
-                </div>
-
-                <div class="campo"> 
-                    <label for="senha" class="label-faixa">Senha</label> 
-                    <input type="password" id="senha" placeholder="Digite sua senha" required>
-                </div>
-
-                <div class="campo"> 
-                    <label for="confirmar" class="label-faixa">Confirmar senha</label> 
-                    <input type="password" id="confirmar" placeholder="Confirme sua senha" required>
-                 </div>
-            </section>
-
-            <button type="submit">Cadastrar</button> 
-
-        </form>
-    </main>
-
-    <footer class="rodape"><p>2026- grupo7 todos os direitos reservado</p></footer>
-    
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projeto-em-equipe-grupo7</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
