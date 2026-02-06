@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import showToast from '../../utils/toast';
 import { useUserData } from '../../hooks/useUserData';
-import { useNavigate } from 'react-router-dom';
 
 interface OnboardingModalProps {
     isOpen: boolean;
@@ -40,7 +39,6 @@ const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onComplete })
             industry: 'outros'
         }
     });
-    const navigate = useNavigate();
 
     const industries = [
         'Tecnologia', 'Varejo', 'Serviços', 'Saúde', 'Educação',
